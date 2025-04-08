@@ -177,6 +177,7 @@ p1.age = 35;
 // Customizable Object properties
 let o = { x:12, y:13 };
 Object.defineProperty(o, 'x', {        //define 1 property at a time
+    value: 12,                         //The value associated with the property.
     writable: false,                   //writable false restricts from making changes to value associated with the property
     configurable: false,               //configurable false restricts from making any changes to object's property except for value & writable
     enumerable: false                  //enumerable false restricts from listing the object property through Object.keys() or For-in loop
@@ -186,6 +187,8 @@ Object.defineProperty(o, 'x', {        //define 1 property at a time
 // Configurable: If false, any attempts to delete the property or change its attributes (Writable, Configurable, or Enumerable) will fail.
 
 // Enumerable: If true, the property will be iterated over when a user does for (var prop in obj){} (or similar).
+
+// All required properties except value must be defined in 1 go for a particular property as later attempt gets the error "Uncaught TypeError: Cannot redefine property"
 
 var obj = {};
 Object.defineProperties(obj, {         //define multiple properties together

@@ -14,5 +14,5 @@ for (var i = 0; i < 2; i++) {
 }
 //----------------------------------------
 
-myFunctions[0]();
+myFunctions[0]();   //undefined as getF() doesn't returns anything
 myFunctions[1]();

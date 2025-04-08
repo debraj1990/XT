@@ -27,6 +27,7 @@
     Ref:
 
     https://developer.mozilla.org/bm/docs/Web/JavaScript/EventLoop
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop
     http://latentflip.com/loupe
 
     ----------------------------------------------------------------------
